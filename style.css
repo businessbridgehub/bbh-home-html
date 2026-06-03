@@ -1522,7 +1522,15 @@ footer {
 }
 .col-sm-8 {
     margin: 0 auto;
-    flex: 3
+    flex: 3;
+}
+.col-sm-6 {
+    float: left;
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .col-sm-4 {
     margin: 0 auto;
@@ -1542,6 +1550,12 @@ footer {
 }
 .col-12.py-4 h3 {
     border-bottom: 1px solid #ccc;
+}
+.mission-cards-container {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:16px;
 }
 /* ===================== RESPONSIVE ===================== */
 /* ===================== PRODUCTS PAGE ===================== */
@@ -1567,6 +1581,10 @@ footer {
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;
+}
+
+.text-align p{
+    text-align: left;
 }
 
 .products-intro-content p:last-child {
@@ -1881,7 +1899,7 @@ footer {
     flex-direction: column;
     padding: 0 2cqh;
   }
-  .col-sm-8, .col-sm-4 {
+  .col-sm-8, .col-sm-4, .col-sm-6 {
       margin: 0 auto;
       flex: none;
 
@@ -2057,6 +2075,19 @@ footer {
 
   .project-img-placeholder {
     height: 160px;
+  }
+
+  .col-sm-6 {
+    /* Prevent the column from growing or shrinking, keep it at base size */
+    flex: 0 0 auto; 
+    /* Occupy exactly 6 out of 12 columns (50%) */
+    width: 100%;
+  }
+  .mission-cards-container {
+    grid-template-columns: none;
+  }
+  .text-align p {
+      text-align: justify;
   }
 }
 
