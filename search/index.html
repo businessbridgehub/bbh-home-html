@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Search Page | Business Bridge Hub</title>
+        <meta name="description" content="Look for the information you need with our powerful search functionality. Find relevant content, products, and services quickly and easily on our search page.">
+        <meta name="keywords" content="WordPress themes, WordPress plugins, BBH Lite, Security Insight, Redirection plugin, Schema plugin, Business Bridge Hub products">
+        <link rel="canonical" href="https://businessbridgehub.com/search/">
+
+        <meta property="og:title" content="Search Page | Business Bridge Hub">
+        <meta property="og:description" content="Look for the information you need with our powerful search functionality. Find relevant content, products, and services quickly and easily on our search page.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://businessbridgehub.com/search/">
+        <meta property="og:image" content="https://businessbridgehub.com/wp-content/uploads/2026/06/search.png">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Search Page | Business Bridge Hub">
+        <meta name="twitter:description" content="Look for the information you need with our powerful search functionality. Find relevant content, products, and services quickly and easily on our search page.">
+        <meta name="generator" content="WordPress 7.0" />
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://businessbridgehub.com/wp-content/uploads/2026/06/favicon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://businessbridgehub.com/wp-content/uploads/2026/06/favicon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="/style.css" rel="stylesheet">
+
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                "@type": "SearchResultsPage",
+                "@id": "https://businessbridgehub.com/search/#webpage",
+                "url": "https://businessbridgehub.com/search/",
+                "name": "Search Page | Business Bridge Hub",
+                "description": "Look for the information you need with our powerful search functionality. Find relevant content, products, and services quickly and easily on our search page.",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://businessbridgehub.com/wp-content/uploads/2026/06/search.png"
+                },
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://businessbridgehub.com/#website",
+                    "name": "Business Bridge Hub",
+                    "url": "https://businessbridgehub.com/"
+                }
+                },
+                {
+                "@type": "WebSite",
+                "@id": "https://businessbridgehub.com/#website",
+                "url": "https://businessbridgehub.com/",
+                "name": "Business Bridge Hub",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://businessbridgehub.com/search/?q={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+                }
+            ]
+            }
+        </script>
+
+    </head>
+    <body>
+
+    <div class="noise"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header id="navbar-container"></header>
+
+    <!-- ===== HERO ===== -->
+    <section class="section-hero products-hero">
+        <div class="container">
+        <span class="hero-badge">BBH Search Page</span>
+            <h1>Search Your <span class="gradient-text">Query</span></h1>
+            <p>Find the information you need quickly and easily with our powerful search functionality.</p>
+        </div>
+        <!-- ==== Search Box ==== -->
+        <div class="container search-page py-5">
+            <input type="text" id="searchBox" placeholder="Type to search..." />
+        </div>
+        <div class="container searchresult">
+            <div id="results"></div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer-container"></footer>
+
+        <script>
+            // Example site data (you can expand this with real content)
+            const sitePages = [
+            { title: "Home", url: "https://businessbridgehub.com/" },
+            { title: "About Us", url: "https://businessbridgehub.com/about-us" },
+            { title: "Services", url: "https://businessbridgehub.com/services" },
+            { title: "Contact Us", url: "https://businessbridgehub.com/contact" },
+            { title: "Products", url: "https://businessbridgehub.com/products" },
+            { title: "Blog", url: "https://businessbridgehub.com/blog" },
+            { title: "Our Portfolio", url: "https://businessbridgehub.com/portfolio" },
+            { title: " BBH Lite WordPress Theme", url: "https://businessbridgehub.com/products/wp-themes/bbh-lite/" },
+            { title: " AJ Card Element", url: "https://businessbridgehub.com/products/wp-plugins/aj-card-element/" },
+            { title: " AJ Category Posts", url: "https://businessbridgehub.com/products/wp-plugins/aj-category-posts/" },
+            { title: " AJ FAQ Block", url: "https://businessbridgehub.com/products/wp-plugins/aj-faq-block/" },
+            { title: " AJ Square Testimonial Slider", url: "https://businessbridgehub.com/products/wp-plugins/aj-square-testimonial-slider/" },
+            { title: " AJx Filter for WooCommerce", url: "https://businessbridgehub.com/products/wp-plugins/ajx-filter-for-woo/" },
+            { title: " BBH Custom Schema – Add Custom JSON-LD to Your Website", url: "https://businessbridgehub.com/products/wp-plugins/bbh-custom-schema/" },
+            { title: " BBH Redirection", url: "https://businessbridgehub.com/products/wp-plugins/bbh-redirection/" },
+            { title: " BBH Security Insight", url: "https://businessbridgehub.com/products/wp-plugins/bbh-security-insight/" },
+            { title: " BBH SEO Toolkit", url: "https://businessbridgehub.com/products/wp-plugins/bbh-seo-toolkit/" }
+
+            ];
+
+            const searchBox = document.getElementById("searchBox");
+            const results = document.getElementById("results");
+
+            searchBox.addEventListener("input", function() {
+            const query = this.value.toLowerCase();
+            results.innerHTML = "";
+
+            if (query.length > 0) {
+                const matches = sitePages.filter(page =>
+                page.title.toLowerCase().includes(query)
+                );
+
+                if (matches.length > 0) {
+                matches.forEach(page => {
+                    const div = document.createElement("div");
+                    div.classList.add("result");
+                    div.innerHTML = `<a href="${page.url}">${page.title}</a>`;
+                    results.appendChild(div);
+                });
+                } else {
+                results.innerHTML = "<p>No results found.</p>";
+                }
+            }
+            });
+        </script>
+        <script src="/assets/js/script.js"></script>
+
+    </body>
+</html>
