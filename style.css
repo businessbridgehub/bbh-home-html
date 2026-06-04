@@ -62,7 +62,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .section-risk {
-  background: linear-gradient(180deg, rgba(47,128,237,0.04) 0%, transparent 60%);
+  background: linear-gradient(180deg, rgba(47,128,237,0.04) 0%, transparent 60%) !important;
 }
 
 .section-services {
