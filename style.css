@@ -1,3 +1,19 @@
+/*
+Theme Name: BBH Lite
+Theme URI: https://jahidshah.com/themes/bbh-lite/
+Author: Jahid Shah
+Author URI: https://jahidshah.com/legal-licensing/
+Description: Lightweight, responsive WordPress theme with multi-level navigation, widget areas, Customizer controls, full Gutenberg support, and accessibility features.
+Version: 1.0.4
+Requires at least: 6.0
+Tested up to: 7.0
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bbh-lite
+Tags: blog, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, right-sidebar, sticky-post, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks, rtl-language-support
+*/
+
 /* ===================== GLOBAL ===================== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
