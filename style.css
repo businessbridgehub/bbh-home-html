@@ -358,7 +358,21 @@ section > p {
   position: relative;
   z-index: 1;
 }
-
+.footer-card {
+  background: rgba(255,255,255,0.03);
+  padding: 32px 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+.footer-card h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+}
 /* ===================== STATS ===================== */
 .section-stats {
   padding: 80px 0;
@@ -555,6 +569,20 @@ footer {
   color: #60a5fa;
 }
 
+.footer-links-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.footer-links-list a {
+    padding: 5px;
+    box-shadow: 0px 0px 3px #ccc;
+    border-radius: 5px;
+}
+.footer-links-list a:hover {
+    background-color: #ccc;
+    transition: 2s;
+}
 .footer-bottom {
   text-align: center;
   font-size: 13px;
@@ -2000,7 +2028,7 @@ position: fixed;
   }
   .rowbbh {
     flex-direction: column;
-    padding: 0 2cqh;
+    padding: 0;
   }
   .col-sm-8, .col-sm-4, .col-sm-6 {
       margin: 0 auto;
@@ -2137,7 +2165,7 @@ position: fixed;
   }
 
   .mission-card {
-    padding: 36px 24px;
+    padding: 36px 5px 36px 15px;
   }
 
   /* Contact page responsive */
