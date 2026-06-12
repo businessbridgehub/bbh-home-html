@@ -80,16 +80,17 @@
         <lastmod>2026-06-12</lastmod>
         <priority>0.8</priority>
     </url>
+        <url>
+        <loc>https://businessbridgehub.com/plugins/bbh-security-insight/</loc>
+        <lastmod>2026-06-13</lastmod>
+        <priority>0.8</priority>
+    </url>
     <!--<url>
         <loc>https://businessbridgehub.com/plugins/bbh-seo-toolkit/</loc>
         <lastmod>2026-06-03</lastmod>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://businessbridgehub.com/plugins/bbh-security-insight/</loc>
-        <lastmod>2026-06-03</lastmod>
-        <priority>0.8</priority>
-    </url>
+
     <url>
         <loc>https://businessbridgehub.com/plugins/bbh-redirection/</loc>
         <lastmod>2026-06-03</lastmod>
