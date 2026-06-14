@@ -1687,12 +1687,13 @@ footer {
     padding: 20px 30px;
 }
 .content-container li {
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 .rowbbh {
     display: flex;
     justify-content: center;
     padding: 0 3rem;
+    gap: 15px;
 }
 .col-sm-8 {
     margin: 0 auto;
@@ -1751,7 +1752,7 @@ footer {
 section.section-why-open-source, section.section-transparency {
     background: linear-gradient(135deg, rgba(47, 128, 237, 0.05) 0%, rgba(167, 139, 250, 0.03) 100%);
 }
-section.section-why-open-source ul {
+section.section-transparency ul, section.section-why-open-source ul {
     padding: 0 30px;
 }
 .featured-image-holder.whyopens img {
