@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BridgeHub Security Insight - WordPress Security Audit Plugin | Business Bridge Hub</title>
+  <meta name="description" content="BridgeHub Security Insight runs a lightweight, read-only security audit on your WordPress site and generates a professional Security Risk Report with score, risk levels, and remediation steps.">
+  <meta name="keywords" content="wordpress security plugin, security audit, security scan, site health, wordpress security, wordpress audit plugin, wordpress vulnerability scanner">
+  <link rel="canonical" href="https://businessbridgehub.com/plugins/bridgehub-security-insight/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BridgeHub Security Insight - WordPress Security Audit Plugin">
+  <meta property="og:description" content="Run a read-only security audit on your WordPress installation and get a professional Security Risk Report with score, risk levels, and remediation recommendations.">
+  <meta property="og:url" content="https://businessbridgehub.com/plugins/bridgehub-security-insight/">
+  <meta property="og:image" content="https://businessbridgehub.com/assets/og-bbh-security-insight.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BridgeHub Security Insight - WordPress Security Audit Plugin">
+  <meta name="twitter:description" content="Run a read-only security audit on your WordPress installation and get a professional Security Risk Report.">
+  <link rel="icon" href="https://businessbridgehub.com/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://businessbridgehub.com/#software",
+          "name": "BridgeHub Security Insight",
+          "description": "A read-only WordPress security audit plugin that runs 15 security checks and generates a professional Security Risk Report with color-coded risk levels, an overall security score (0–100), and detailed remediation recommendations.",
+          "applicationCategory": "SecurityApplication",
+          "operatingSystem": "WordPress 6.7+, PHP 7.4+",
+          "image": "https://businessbridgehub.com/wp-content/uploads/2026/06/bbh-security-insight.png",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Md Jahid Shah"
+          },
+          "softwareVersion": "1.0.2",
+          "releaseDate": "2026-06-13",
+          "datePublished": "2026-06-13",
+          "dateModified": "2026-06-28",
+          "keywords": "security, security audit, security scan, site health, wordpress security, malware heuristics, wordpress security plugin"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://businessbridgehub.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is BridgeHub Security Insight really read-only?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, completely. The plugin runs checks by reading WordPress configuration constants, checking file permissions, and making safe HTTP requests to your own site. It never modifies files, changes database records, deletes data, or alters any settings. You can run it with complete peace of mind."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this plugin send my data anywhere?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. BridgeHub Security Insight processes everything locally on your server. All audit checks run against your own WordPress installation, and the results are displayed only in your admin dashboard. No data is sent to Business Bridge Hub, WordPress.org, or any third-party service."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How often should I run a security audit?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We recommend running an audit at least once a month, or after any significant change to your site such as updating plugins, changing themes, adding new users, or modifying server configuration. However, there is no restriction from our side — you may run the scan as many times as needed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can BridgeHub Security Insight fix security issues?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. This plugin is intentionally read-only and diagnostic only. It tells you what is wrong and provides clear, step-by-step instructions for how to fix each issue. We believe site owners should make informed decisions about their own security rather than relying on automated fixes that could break functionality."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How accurate is the malware heuristics check?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The malware heuristics check scans for suspicious code patterns commonly found in known malware, backdoors, and injected payloads. It uses signature-based pattern matching and is designed to flag potential threats for manual review. It is not a replacement for a dedicated security plugin but serves as an excellent first line of awareness."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Will this plugin slow down my site?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not at all. BridgeHub Security Insight only runs when you actively click the Run Security Audit button. It has no background processes, no cron jobs, no database overhead, and no front-end impact. When you are not on the audit page, the plugin does nothing at all."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header id="navbar-container"></header>
+
+<section class="section-hero">
+  <div class="container">
+    <span class="hero-badge"><i class="fas fa-shield-halved"></i> WordPress Plugin</span>
+    <h1>BridgeHub Security Insight <span class="gradient-text">Security Risk Auditor</span></h1>
+    <p>Run a lightweight, read-only security audit on your WordPress site. Get a professional Security Risk Report with an overall score, color-coded risk levels, and step-by-step remediation recommendations — all without modifying a single file.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://downloads.wordpress.org/plugin/bbh-security-insight.1.0.2.zip" class="cta-btn" download><i class="fas fa-download"></i> Download v1.0.2</a>
+      <a href="https://wordpress.org/plugins/bbh-security-insight/" class="cta-btn" style="background:rgba(255,255,255,0.06);box-shadow:none;border:1px solid rgba(255,255,255,0.1);" target="_blank" rel="noopener"><i class="fas fa-wordpress"></i> WordPress.org</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-services" id="overview">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label"><i class="fas fa-info-circle"></i> Overview</span>
+    </div>
+    <h2>What Is BridgeHub Security Insight?</h2>
+    <p>BridgeHub Security Insight is a free, lightweight WordPress plugin that performs a comprehensive, read-only security audit of your WordPress installation. It checks 15 critical security areas — from WordPress version exposure and database table prefixes to security headers and malware heuristics — then presents the results in a beautiful, color-coded Security Risk Report with an overall score out of 100, clear risk indicators, and actionable remediation advice.</p>
+    <p style="margin-top:20px;">This plugin is designed for site owners, developers, and agencies who want a fast, non-intrusive way to identify potential security weaknesses in their WordPress sites. It never modifies files, never changes settings of your site, and never sends data to external servers. Just click, scan, and review.</p>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label"><i class="fas fa-star"></i> Features</span>
+    </div>
+    <h2>Why Use BridgeHub Security Insight?</h2>
+    <p class="subheadingpara">Everything you need to assess your WordPress security posture in one click.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-bolt"></i></div>
+        <h3>One-Click Security Audit</h3>
+        <p>Click a single button on the WordPress admin dashboard to run all 15 security checks instantly. No configuration, no setup — just instant insight.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Professional Risk Report</h3>
+        <p>View a beautifully formatted, color-coded report with an overall security score (0–100), categorized risk levels (Critical, Warning, Safe), and detailed findings for each check.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3>Actionable Remediation</h3>
+        <p>Every check includes a human-readable explanation of the finding and a clear, step-by-step recommendation for how to fix it — even non-developers can follow along.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-lock"></i></div>
+        <h3>100% Read-Only</h3>
+        <p>This plugin never modifies files, changes settings, deletes data, or sends any information to external servers. Your site stays exactly as it was before the scan.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-translate"></i></div>
+        <h3>Translation Ready</h3>
+        <p>Fully internationalized with WordPress translation functions. Add your own language pack or use an existing one — the entire interface adapts seamlessly.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-code"></i></div>
+        <h3>Standards Compliant</h3>
+        <p>Built following WordPress Coding Standards with secure AJAX endpoints, nonce verification, and proper capability checks. No Composer, no third-party APIs, no bloat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-audit" id="audit-checks">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label"><i class="fas fa-list-check"></i> Audit Checks</span>
+    </div>
+    <h2>15 Security Checks</h2>
+    <p class="subheadingpara">BridgeHub Security Insight evaluates your site across 15 carefully selected security parameters covering exposure, configuration, file permissions, and code integrity.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:16px;">
+      <div class="card" style="border-left:3px solid #ef4444;">
+        <div class="card-icon"><i class="fas fa-eye"></i></div>
+        <h3>WordPress Version Exposure</h3>
+        <p>Checks whether your WordPress version is publicly visible in the page source, which can help attackers target known vulnerabilities.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #ef4444;">
+        <div class="card-icon"><i class="fas fa-table"></i></div>
+        <h3>Database Table Prefix</h3>
+        <p>Verifies that the default <code>wp_</code> prefix has been changed to reduce the risk of SQL injection attacks on your database.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #f59e0b;">
+        <div class="card-icon"><i class="fas fa-plug"></i></div>
+        <h3>XML-RPC Status</h3>
+        <p>Detects whether XML-RPC is enabled, which can be abused for brute-force attacks and DDoS amplification if not properly secured.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #f59e0b;">
+        <div class="card-icon"><i class="fas fa-file-pen"></i></div>
+        <h3>DISALLOW_FILE_EDIT</h3>
+        <p>Confirms whether the constant <code>DISALLOW_FILE_EDIT</code> is defined in <code>wp-config.php</code> to prevent in-dashboard file editing.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #f59e0b;">
+        <div class="card-icon"><i class="fas fa-bug"></i></div>
+        <h3>WP_DEBUG Status</h3>
+        <p>Verifies that <code>WP_DEBUG</code> is disabled on production sites so sensitive error information is not exposed to visitors.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #ef4444;">
+        <div class="card-icon"><i class="fas fa-folder-open"></i></div>
+        <h3>Directory Browsing</h3>
+        <p>Tests whether directory listing is enabled on key directories, which can expose the full file structure of your site to attackers.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #f59e0b;">
+        <div class="card-icon"><i class="fas fa-file-lines"></i></div>
+        <h3>readme.html Exposure</h3>
+        <p>Checks if the WordPress <code>readme.html</code> file is accessible, revealing your WordPress version and installation path.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #f59e0b;">
+        <div class="card-icon"><i class="fas fa-file"></i></div>
+        <h3>install.php Exposure</h3>
+        <p>Verifies that <code>wp-admin/install.php</code> is not accessible, which could allow a fresh installation to be triggered.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #ef4444;">
+        <div class="card-icon"><i class="fas fa-gear"></i></div>
+        <h3>wp-config.php Permissions</h3>
+        <p>Checks the file permissions on <code>wp-config.php</code> to ensure it is not world-readable, protecting your database credentials.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #f59e0b;">
+        <div class="card-icon"><i class="fas fa-folder"></i></div>
+        <h3>wp-content Permissions</h3>
+        <p>Verifies that the <code>wp-content</code> directory has secure permissions and is not writable by unauthorized users.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #ef4444;">
+        <div class="card-icon"><i class="fas fa-users"></i></div>
+        <h3>User Enumeration Exposure</h3>
+        <p>Tests whether usernames can be enumerated via REST API or author archives, which is a common first step in targeted attacks.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #f59e0b;">
+        <div class="card-icon"><i class="fas fa-shield"></i></div>
+        <h3>Security Headers</h3>
+        <p>Checks for the presence of critical HTTP security headers including CSP, HSTS, X-Frame-Options, X-Content-Type-Options, and Referrer-Policy.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #ef4444;">
+        <div class="card-icon"><i class="fas fa-upload"></i></div>
+        <h3>Uploads PHP Execution</h3>
+        <p>Verifies that PHP execution is blocked in the <code>wp-content/uploads</code> directory to prevent uploaded malicious files from running.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #f59e0b;">
+        <div class="card-icon"><i class="fas fa-user"></i></div>
+        <h3>Admin Username Detection</h3>
+        <p>Checks whether the default <code>admin</code> username exists, which is an easy target for brute-force login attempts.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #ef4444;">
+        <div class="card-icon"><i class="fas fa-skull"></i></div>
+        <h3>Malware Heuristics</h3>
+        <p>Scans for suspicious code patterns commonly associated with malware, backdoors, and injected payloads using heuristic analysis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="installation">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label"><i class="fas fa-download"></i> Installation</span>
+    </div>
+    <h2>Get Started in Minutes</h2>
+    <p class="subheadingpara">Two simple ways to install BridgeHub Security Insight on your WordPress site.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:16px;">
+      <div class="card" style="padding:36px 32px;">
+        <div class="card-icon"><i class="fab fa-wordpress"></i></div>
+        <h3>Method 1: From WordPress Dashboard</h3>
+        <ol style="color:rgba(255,255,255,0.6);font-size:14px;line-height:1.8;padding-left:20px;position:relative;z-index:1;">
+          <li style="margin-bottom:8px;">Go to <strong style="color:#e8edf5;">Plugins &rarr; Add New</strong> in your WordPress admin.</li>
+          <li style="margin-bottom:8px;">Search for <strong style="color:#e8edf5;">BridgeHub Security Insight</strong>.</li>
+          <li style="margin-bottom:8px;">Click <strong style="color:#e8edf5;">Install Now</strong> and then <strong style="color:#e8edf5;">Activate</strong>.</li>
+          <li style="margin-bottom:8px;">Go to <strong style="color:#e8edf5;">Tools &rarr; Security Insight</strong> to run your first audit.</li>
+        </ol>
+      </div>
+      <div class="card" style="padding:36px 32px;">
+        <div class="card-icon"><i class="fas fa-file-zipper"></i></div>
+        <h3>Method 2: Manual Upload</h3>
+        <ol style="color:rgba(255,255,255,0.6);font-size:14px;line-height:1.8;padding-left:20px;position:relative;z-index:1;">
+          <li style="margin-bottom:8px;">Download the plugin zip file from <a href="https://wordpress.org/plugins/bbh-security-insight/" style="color:#60a5fa;" target="_blank" rel="noopener">WordPress.org</a>.</li>
+          <li style="margin-bottom:8px;">Go to <strong style="color:#e8edf5;">Plugins &rarr; Add New &rarr; Upload Plugin</strong>.</li>
+          <li style="margin-bottom:8px;">Choose the downloaded zip and click <strong style="color:#e8edf5;">Install Now</strong>.</li>
+          <li style="margin-bottom:8px;">Click <strong style="color:#e8edf5;">Activate Plugin</strong> and navigate to <strong style="color:#e8edf5;">Tools &rarr; Security Insight</strong>.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-services" id="usage">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label"><i class="fas fa-compass"></i> Usage</span>
+    </div>
+    <h2>How to Run a Security Audit</h2>
+    <p class="subheadingpara">Using BridgeHub Security Insight takes less than 30 seconds from start to finish.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:16px;">
+      <div class="card" style="text-align:center;padding:40px 28px;">
+        <div style="font-size:36px;font-weight:800;background:linear-gradient(135deg,#2f80ed,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px;">1</div>
+        <h3>Navigate to the Tool</h3>
+        <p>In your WordPress admin sidebar, go to <strong style="color:#e8edf5;">Tools &rarr; Security Insight</strong> to open the audit page.</p>
+      </div>
+      <div class="card" style="text-align:center;padding:40px 28px;">
+        <div style="font-size:36px;font-weight:800;background:linear-gradient(135deg,#2f80ed,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px;">2</div>
+        <h3>Click Run Security Audit</h3>
+        <p>Press the <strong style="color:#e8edf5;">Run Security Audit</strong> button. The plugin runs all 15 checks via secure AJAX in the background.</p>
+      </div>
+      <div class="card" style="text-align:center;padding:40px 28px;">
+        <div style="font-size:36px;font-weight:800;background:linear-gradient(135deg,#2f80ed,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px;">3</div>
+        <h3>Read Your Report</h3>
+        <p>Review the color-coded report with your overall score, risk breakdown, and detailed remediation recommendations for every check.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-faq" id="faq">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label"><i class="fas fa-question-circle"></i> FAQ</span>
+    </div>
+    <h2>Frequently Asked Questions</h2>
+    <p class="subheadingpara">Common questions about BridgeHub Security Insight answered.</p>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>Is BridgeHub Security Insight really read-only?</h3>
+        <p>Yes, completely. The plugin runs checks by reading WordPress configuration constants, checking file permissions, and making safe HTTP requests to your own site. It never modifies files, changes database records, deletes data, or alters any settings. You can run it with complete peace of mind.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does this plugin send my data anywhere?</h3>
+        <p>No. BridgeHub Security Insight processes everything locally on your server. All audit checks run against your own WordPress installation, and the results are displayed only in your admin dashboard. No data is sent to Business Bridge Hub, WordPress.org, or any third-party service.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How often should I run a security audit?</h3>
+        <p>We recommend running an audit at least once a month, or after any significant change to your site such as updating plugins, changing themes, adding new users, or modifying server configuration. However, there is no restriction from our side — you may run the scan as many times as needed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can BridgeHub Security Insight fix security issues?</h3>
+        <p>No. This plugin is intentionally read-only and diagnostic only. It tells you what is wrong and provides clear, step-by-step instructions for how to fix each issue. We believe site owners should make informed decisions about their own security rather than relying on automated fixes that could break functionality.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How accurate is the malware heuristics check?</h3>
+        <p>The malware heuristics check scans for suspicious code patterns commonly found in known malware, backdoors, and injected payloads. It uses signature-based pattern matching and is designed to flag potential threats for manual review. It is not a replacement for a dedicated security plugin but serves as an excellent first line of awareness.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Will this plugin slow down my site?</h3>
+        <p>Not at all. BridgeHub Security Insight only runs when you actively click the Run Security Audit button. It has no background processes, no cron jobs, no database overhead, and no front-end impact. When you are not on the audit page, the plugin does nothing at all.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-cta" id="cta">
+  <div class="container">
+    <span class="hero-badge"><i class="fas fa-shield-halved"></i> Free Plugin</span>
+    <h2>Start Securing Your WordPress Site</h2>
+    <p>Download BridgeHub Security Insight for free and discover your site's security posture in under 30 seconds. No sign-up, no email, no strings attached.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://downloads.wordpress.org/plugin/bbh-security-insight.1.0.2.zip" class="cta-btn" download><i class="fas fa-download"></i> Download Free</a>
+      <a href="https://wordpress.org/plugins/bbh-security-insight/" class="cta-btn" style="background:rgba(255,255,255,0.06);box-shadow:none;border:1px solid rgba(255,255,255,0.1);" target="_blank" rel="noopener"><i class="fab fa-wordpress"></i> View on WordPress.org</a>
+      <a href="https://businessbridgehub.com/products/" class="cta-btn" style="background:transparent;box-shadow:none;border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);"><i class="fas fa-arrow-left"></i> All Products</a>
+    </div>
+  </div>
+</section>
+
+<footer id="footer-container">
+</footer>
+    <script>
+      fetch('/navbar.html')
+        .then(r => r.text())
+        .then(h => document.getElementById('navbar-container').innerHTML = h);
+
+      fetch('/footer.html')
+        .then(r => r.text())
+        .then(h => document.getElementById('footer-container').innerHTML = h);
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</body>
+</html>
