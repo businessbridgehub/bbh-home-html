@@ -1772,6 +1772,11 @@ section.section-transparency ul, section.section-why-open-source ul {
     align-content: center;
     align-items: center;
 }
+
+a.founder-profile-btn:hover {
+    color: #2f80ed;
+    transition: all 0.3s ease;
+ }
 /* ===================== RESPONSIVE ===================== */
 /* ===================== PRODUCTS PAGE ===================== */
 
