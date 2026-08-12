@@ -49,21 +49,39 @@
 
     <script type="application/ld+json">
     {
-      "@context":"https://schema.org",
-      "@graph":[
-
+      "@context": "https://schema.org",
+      "@graph": [
         {
-          "@type":"Organization",
-          "@id":"https://businessbridgehub.com/#organization",
-          "name":"Business Bridge Hub",
-          "url":"https://businessbridgehub.com/",
-          "logo":{
-            "@type":"ImageObject",
-            "url":"https://businessbridgehub.com/wp-content/uploads/2026/06/bbh-logo.png"
+          "@type": "Organization",
+          "@id": "https://businessbridgehub.com/#organization",
+          "name": "Business Bridge Hub",
+          "url": "https://businessbridgehub.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://businessbridgehub.com/#logo",
+            "url": "https://businessbridgehub.com/wp-content/uploads/2026/06/bbh-logo.png",
+            "caption": "Business Bridge Hub Logo"
           },
-          "image":"https://businessbridgehub.com/wp-content/uploads/2026/06/business-bridge-hub.png",
-          "description":"Business Bridge Hub specializes in WordPress development, website security, technical SEO, structured data systems, performance optimization, and custom WordPress solutions.",
-          "knowsAbout":[
+          "image": "https://businessbridgehub.com/wp-content/uploads/2026/06/business-bridge-hub.png",
+          "description": "Business Bridge Hub specializes in WordPress development, website security, technical SEO, structured data systems, performance optimization, and custom WordPress solutions.",
+          "founder": {
+            "@type": "Person",
+            "@id": "https://jahidshah.com/#person",
+            "name": "Jahid Shah",
+            "url": "https://jahidshah.com/",
+            "sameAs": [
+              "https://businessbridgehub.com/about/",
+              "https://profiles.wordpress.org/jahidshah/",
+              "https://github.com/MdJahidShah",
+              "https://labs.jahidshah.com/",
+              "https://www.linkedin.com/in/jahidshah/",
+              "https://x.com/JahidShahwp/",
+              "https://www.facebook.com/jahidwpsec/",
+              "https://www.instagram.com/jahidshahwp/",
+              "https://www.youtube.com/@jahidshahwp"
+            ]
+          },
+          "knowsAbout": [
             "WordPress Development",
             "WordPress Theme Development",
             "WordPress Plugin Development",
@@ -74,22 +92,30 @@
             "Performance Optimization",
             "Malware Removal",
             "Core Web Vitals"
+          ],
+          "sameAs": [
+            "https://jahidshah.com/",
+            "https://labs.jahidshah.com/",
+            "https://profiles.wordpress.org/jahidshah/",
+            "https://www.facebook.com/jahidwpsec/"
           ]
         },
-
         {
-          "@type":"ProfessionalService",
-          "@id":"https://businessbridgehub.com/#service",
-          "name":"Business Bridge Hub",
-          "url":"https://businessbridgehub.com/",
-          "image":"https://businessbridgehub.com/wp-content/uploads/2026/06/business-bridge-hub.png",
-          "logo":"https://businessbridgehub.com/wp-content/uploads/2026/06/bbh-logo.png",
-          "description":"Professional WordPress development, website security, technical SEO, structured data implementation, and performance optimization services.",
-          "provider":{
-            "@id":"https://businessbridgehub.com/#organization"
+          "@type": "ProfessionalService",
+          "@id": "https://businessbridgehub.com/#service",
+          "name": "Business Bridge Hub",
+          "url": "https://businessbridgehub.com/",
+          "image": "https://businessbridgehub.com/wp-content/uploads/2026/06/business-bridge-hub.png",
+          "logo": "https://businessbridgehub.com/wp-content/uploads/2026/06/bbh-logo.png",
+          "description": "Professional WordPress development, website security, technical SEO, structured data implementation, and performance optimization services.",
+          "provider": {
+            "@id": "https://businessbridgehub.com/#organization"
           },
-          "areaServed":"Worldwide",
-          "serviceType":[
+          "areaServed": {
+            "@type": "Place",
+            "name": "Worldwide"
+          },
+          "serviceType": [
             "WordPress Development",
             "Website Security",
             "Technical SEO",
@@ -99,77 +125,100 @@
             "Website Performance Optimization"
           ]
         },
-
         {
-          "@type":"WebSite",
-          "@id":"https://businessbridgehub.com/#website",
-          "url":"https://businessbridgehub.com/",
-          "name":"Business Bridge Hub",
-          "publisher":{
-            "@id":"https://businessbridgehub.com/#organization"
+          "@type": "WebSite",
+          "@id": "https://businessbridgehub.com/#website",
+          "url": "https://businessbridgehub.com/",
+          "name": "Business Bridge Hub",
+          "publisher": {
+            "@id": "https://businessbridgehub.com/#organization"
           },
-          "description":"WordPress development, security engineering, technical SEO systems, and scalable digital solutions.",
-          "inLanguage":"en"
+          "description": "WordPress development, security engineering, technical SEO systems, and scalable digital solutions.",
+          "inLanguage": "en"
         },
-
         {
-          "@type":"WebPage",
-          "@id":"https://businessbridgehub.com/#webpage",
-          "url":"https://businessbridgehub.com/",
-          "name":"Business Bridge Hub | WordPress Development, Security & Technical SEO",
-          "isPartOf":{
-            "@id":"https://businessbridgehub.com/#website"
+          "@type": "WebPage",
+          "@id": "https://businessbridgehub.com/#webpage",
+          "url": "https://businessbridgehub.com/",
+          "name": "Business Bridge Hub | WordPress Development, Security & Technical SEO",
+          "isPartOf": {
+            "@id": "https://businessbridgehub.com/#website"
           },
-          "about":{
-            "@id":"https://businessbridgehub.com/#organization"
+          "about": {
+            "@id": "https://businessbridgehub.com/#organization"
           },
-          "primaryImageOfPage":{
-            "@type":"ImageObject",
-            "url":"https://businessbridgehub.com/wp-content/uploads/2026/06/business-bridge-hub.png"
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://businessbridgehub.com/wp-content/uploads/2026/06/business-bridge-hub.png"
           },
-          "description":"Business Bridge Hub builds secure, high-performance WordPress solutions with technical SEO, structured data systems, and performance-focused web engineering."
+          "description": "Business Bridge Hub builds secure, high-performance WordPress solutions with technical SEO, structured data systems, and performance-focused web engineering."
         },
-
         {
-          "@type":"Service",
-          "@id":"https://businessbridgehub.com/#wordpress-development",
-          "name":"WordPress Development",
-          "provider":{
-            "@id":"https://businessbridgehub.com/#organization"
+          "@type": "SoftwareApplication",
+          "@id": "https://businessbridgehub.com/#bbh-lite-theme",
+          "name": "BBH Lite WordPress Theme",
+          "operatingSystem": "WordPress",
+          "applicationCategory": "DesignApplication",
+          "softwareRequirements": "WordPress 6.0+",
+          "url": "https://wordpress.org/themes/bbh-lite/",
+          "author": {
+            "@id": "https://jahidshah.com/#person"
           },
-          "serviceType":"WordPress Development"
+          "publisher": {
+            "@id": "https://businessbridgehub.com/#organization"
+          }
         },
-
         {
-          "@type":"Service",
-          "@id":"https://businessbridgehub.com/#website-security",
-          "name":"Website Security",
-          "provider":{
-            "@id":"https://businessbridgehub.com/#organization"
+          "@type": "SoftwareApplication",
+          "@id": "https://businessbridgehub.com/#bbh-custom-schema",
+          "name": "BBH Custom Schema Plugin",
+          "operatingSystem": "WordPress",
+          "applicationCategory": "BusinessApplication",
+          "softwareRequirements": "WordPress 6.0+",
+          "url": "https://wordpress.org/plugins/bbh-custom-schema/",
+          "author": {
+            "@id": "https://jahidshah.com/#person"
           },
-          "serviceType":"Website Security & Malware Protection"
+          "publisher": {
+            "@id": "https://businessbridgehub.com/#organization"
+          }
         },
-
         {
-          "@type":"Service",
-          "@id":"https://businessbridgehub.com/#technical-seo",
-          "name":"Technical SEO & Structured Data",
-          "provider":{
-            "@id":"https://businessbridgehub.com/#organization"
+          "@type": "Service",
+          "@id": "https://businessbridgehub.com/#wordpress-development",
+          "name": "WordPress Development",
+          "provider": {
+            "@id": "https://businessbridgehub.com/#organization"
           },
-          "serviceType":"Technical SEO & Schema Markup Implementation"
+          "serviceType": "WordPress Development"
         },
-
         {
-          "@type":"Service",
-          "@id":"https://businessbridgehub.com/#plugin-theme-development",
-          "name":"WordPress Theme & Plugin Development",
-          "provider":{
-            "@id":"https://businessbridgehub.com/#organization"
+          "@type": "Service",
+          "@id": "https://businessbridgehub.com/#website-security",
+          "name": "Website Security",
+          "provider": {
+            "@id": "https://businessbridgehub.com/#organization"
           },
-          "serviceType":"Custom WordPress Product Development"
+          "serviceType": "Website Security & Malware Protection"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://businessbridgehub.com/#technical-seo",
+          "name": "Technical SEO & Structured Data",
+          "provider": {
+            "@id": "https://businessbridgehub.com/#organization"
+          },
+          "serviceType": "Technical SEO & Schema Markup Implementation"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://businessbridgehub.com/#plugin-theme-development",
+          "name": "WordPress Theme & Plugin Development",
+          "provider": {
+            "@id": "https://businessbridgehub.com/#organization"
+          },
+          "serviceType": "Custom WordPress Product Development"
         }
-
       ]
     }
     </script>

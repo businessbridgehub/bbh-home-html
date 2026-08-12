@@ -31,7 +31,7 @@
     <link href="/style.css" rel="stylesheet">
 
     <script type="application/ld+json">
-      {
+    {
       "@context": "https://schema.org",
       "@graph": [
         {
@@ -52,9 +52,14 @@
             "name": "Business Bridge Hub",
             "url": "https://businessbridgehub.com/"
           },
-          "about": {
-            "@id": "https://businessbridgehub.com/#organization"
-          }
+          "about": [
+            {
+              "@id": "https://businessbridgehub.com/#organization"
+            },
+            {
+              "@id": "https://jahidshah.com/#person"
+            }
+          ]
         },
         {
           "@type": "Organization",
@@ -66,8 +71,38 @@
             "url": "https://businessbridgehub.com/wp-content/uploads/2026/06/bbh-logo.png"
           },
           "description": "Digital growth agency providing web development, website security, technical SEO, performance optimization, and WordPress development services.",
-          "knowsAbout": ["Web Development", "Website Security", "Technical SEO", "Performance Optimization", "WordPress Development"],
-          "foundingDate": "2025"
+          "foundingDate": "2025",
+          "founder": {
+            "@type": "Person",
+            "@id": "https://jahidshah.com/#person",
+            "name": "Jahid Shah",
+            "url": "https://jahidshah.com/",
+            "jobTitle": "Founder & Lead Developer",
+            "sameAs": [
+              "https://businessbridgehub.com/about/",
+              "https://profiles.wordpress.org/jahidshah/",
+              "https://github.com/MdJahidShah",
+              "https://labs.jahidshah.com/",
+              "https://www.linkedin.com/in/jahidshah/",
+              "https://x.com/JahidShahwp/",
+              "https://www.facebook.com/jahidwpsec/",
+              "https://www.instagram.com/jahidshahwp/",
+              "https://www.youtube.com/@jahidshahwp"
+            ]
+          },
+          "knowsAbout": [
+            "Web Development", 
+            "Website Security", 
+            "Technical SEO", 
+            "Performance Optimization", 
+            "WordPress Development"
+          ],
+          "sameAs": [
+            "https://jahidshah.com/",
+            "https://labs.jahidshah.com/",
+            "https://profiles.wordpress.org/jahidshah/",
+            "https://www.facebook.com/jahidwpsec/"
+          ]
         }
       ]
     }
