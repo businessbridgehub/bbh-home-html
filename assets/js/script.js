@@ -50,4 +50,21 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(r => r.text())
       .then(data => document.getElementById("footer-container").innerHTML = data)
       .catch(error => console.error("Footer load error:", error));
+
+    highlightActiveNav();
+
+    // Load Footer and update current year once inserted
+    fetch(basePath + "/footer.html")
+      .then(r => r.text())
+      .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+        
+        // Update copyright year AFTER footer elements exist in DOM
+        const yearEl = document.querySelector("#current-year");
+        if (yearEl) {
+          yearEl.textContent = new Date().getFullYear();
+        }
+    })
+
 });
+
